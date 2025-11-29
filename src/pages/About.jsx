@@ -35,15 +35,6 @@ const About = () => {
         }
     ];
 
-    const organizationalValues = [
-        { letter: 'P', word: 'Presence', description: 'Being fully present with clients and communities' },
-        { letter: 'R', word: 'Respect', description: 'Honoring dignity in every interaction' },
-        { letter: 'E', word: 'Empathy', description: 'Understanding and sharing the feelings of others' },
-        { letter: 'A', word: 'Accountability', description: 'Taking responsibility for outcomes and growth' },
-        { letter: 'C', word: 'Competence', description: 'Delivering excellence through expertise' },
-        { letter: 'H', word: 'Hope', description: 'Inspiring possibility and transformation' }
-    ];
-
     return (
         <div className="animate-fade-in">
             {/* Hero Section */}
@@ -117,82 +108,6 @@ const About = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* Organizational Values - PREACH */}
-            <section className="section" style={{
-                background: 'linear-gradient(135deg, #2C3E50 0%, #34495E 100%)',
-                position: 'relative'
-            }}>
-                <div className="container">
-                    <h2 className="animate-slide-up" style={{
-                        fontSize: '2.5rem',
-                        textAlign: 'center',
-                        marginBottom: '1rem',
-                        color: 'white'
-                    }}>
-                        Our Values: <span style={{ color: '#D4AF37' }}>PREACH</span>
-                    </h2>
-                    <p className="animate-slide-up delay-100" style={{
-                        textAlign: 'center',
-                        fontSize: '1.1rem',
-                        color: 'rgba(255, 255, 255, 0.8)',
-                        maxWidth: '700px',
-                        margin: '0 auto 4rem'
-                    }}>
-                        The principles that guide every interaction and transformation
-                    </p>
-
-                    <div style={{
-                        display: 'grid',
-                        gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
-                        gap: '2rem'
-                    }}>
-                        {organizationalValues.map((value, index) => (
-                            <div
-                                key={index}
-                                className="glass-card animate-slide-up"
-                                style={{
-                                    padding: '2rem',
-                                    background: 'rgba(255, 255, 255, 0.95)',
-                                    animationDelay: `${index * 0.1}s`,
-                                    textAlign: 'center'
-                                }}
-                            >
-                                <div style={{
-                                    width: '60px',
-                                    height: '60px',
-                                    borderRadius: '50%',
-                                    background: 'linear-gradient(135deg, #C68E76 0%, #D4AF37 100%)',
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                    justifyContent: 'center',
-                                    margin: '0 auto 1rem',
-                                    fontSize: '1.8rem',
-                                    fontWeight: '700',
-                                    color: 'white',
-                                    fontFamily: 'var(--font-heading)'
-                                }}>
-                                    {value.letter}
-                                </div>
-                                <h3 style={{
-                                    fontSize: '1.5rem',
-                                    marginBottom: '0.75rem',
-                                    color: 'var(--color-secondary)',
-                                    fontFamily: 'var(--font-heading)'
-                                }}>
-                                    {value.word}
-                                </h3>
-                                <p style={{
-                                    color: '#64748B',
-                                    lineHeight: '1.6'
-                                }}>
-                                    {value.description}
-                                </p>
-                            </div>
-                        ))}
                     </div>
                 </div>
             </section>
