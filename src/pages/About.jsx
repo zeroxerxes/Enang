@@ -54,7 +54,7 @@ const About = () => {
 
                         <div style={{ display: 'flex', gap: '3rem', flexWrap: 'wrap', alignItems: 'flex-start' }}>
                             <div className="animate-scale-in delay-100" style={{ flex: '0 0 300px', position: 'sticky', top: '100px' }}>
-                                <img src="/assets/profile2.jpg" alt="Bernice Keshu" style={{ borderRadius: '20px', boxShadow: 'var(--shadow-lg)', width: '100%' }} />
+                                <img src="/assets/profile-about.png" alt="Bernice Keshu" style={{ borderRadius: '20px', boxShadow: 'var(--shadow-lg)', width: '100%' }} />
                             </div>
 
                             <div style={{ flex: 1, minWidth: '300px' }}>

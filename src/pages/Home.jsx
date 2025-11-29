@@ -46,7 +46,7 @@ const Home = () => {
               maxWidth: '450px',
               border: '8px solid rgba(255, 255, 255, 0.8)'
             }}>
-              <img src="/assets/Profile6.jpg" alt="Bernice Enang Nso Keshu" style={{ width: '100%', height: 'auto', display: 'block' }} />
+              <img src="/assets/profile-home.jpg" alt="Bernice Enang Nso Keshu" style={{ width: '100%', height: 'auto', display: 'block' }} />
               <div style={{
                 position: 'absolute',
                 inset: 0,
