@@ -100,7 +100,7 @@ const Fihof = () => {
                             maxWidth: '700px',
                             margin: '0 auto 2.5rem'
                         }}>
-                            A community-driven initiative dedicated to empowering men and boys, strengthening families, and fostering healthy masculinity.
+                            A foundation championing Modern Model Manhood, Global Citizenship, and Empowerment as pillars of strong families.
                         </p>
 
                         <div className="animate-slide-up delay-300">
@@ -143,10 +143,33 @@ const Fihof = () => {
                             <p style={{
                                 fontSize: '1.1rem',
                                 color: '#475569',
-                                lineHeight: '1.8'
+                                lineHeight: '1.8',
+                                marginBottom: '1.5rem'
                             }}>
-                                To empower men and boys through mentorship, counseling, and community support, fostering healthy masculinity and strengthening family bonds for generational impact.
+                                To restore family dignity by elevating authentic manhood, responsible fatherhood, committed husbandhood, and supportive brotherhood in the home.
                             </p>
+                            <div style={{
+                                background: 'rgba(25, 55, 109, 0.05)',
+                                padding: '1.5rem',
+                                borderRadius: '12px',
+                                marginTop: '1.5rem'
+                            }}>
+                                <h3 style={{ fontSize: '1.1rem', marginBottom: '1rem', color: '#19376D', fontWeight: '600' }}>Our Pillars:</h3>
+                                <ul style={{ listStyle: 'none', padding: 0 }}>
+                                    <li style={{ padding: '0.5rem 0', color: '#475569', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+                                        <span style={{ color: '#E67E22', fontSize: '1.2rem' }}>✓</span>
+                                        Modern Model Manhood
+                                    </li>
+                                    <li style={{ padding: '0.5rem 0', color: '#475569', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+                                        <span style={{ color: '#E67E22', fontSize: '1.2rem' }}>✓</span>
+                                        Global Citizenship
+                                    </li>
+                                    <li style={{ padding: '0.5rem 0', color: '#475569', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+                                        <span style={{ color: '#E67E22', fontSize: '1.2rem' }}>✓</span>
+                                        Empowerment
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
 
                         <div className="glass-card animate-slide-up delay-100" style={{
@@ -166,7 +189,7 @@ const Fihof = () => {
                                 color: '#475569',
                                 lineHeight: '1.8'
                             }}>
-                                A world where every man and boy has access to the support, guidance, and resources needed to become emotionally healthy, responsible, and contributing members of society.
+                                A world where every man and boy has access to the support, guidance, and resources needed to become emotionally healthy, responsible, and contributing members of society — championing strong families built on dignity, love, and authentic connection.
                             </p>
                         </div>
                     </div>
