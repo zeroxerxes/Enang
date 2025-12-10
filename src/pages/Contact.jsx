@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -8,6 +8,22 @@ const Contact = () => {
         service: '',
         message: ''
     });
+
+    const [showSuccess, setShowSuccess] = useState(false);
+
+    useEffect(() => {
+        // Check if redirected back with success parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('success') === 'true') {
+            setShowSuccess(true);
+            // Remove the success parameter from URL
+            window.history.replaceState({}, '', '/contact');
+            // Hide success message after 8 seconds
+            setTimeout(() => {
+                setShowSuccess(false);
+            }, 8000);
+        }
+    }, []);
 
     const handleChange = (e) => {
         setFormData({
@@ -153,6 +169,24 @@ const Contact = () => {
                         <div className="glass-card animate-slide-up delay-200" style={{ padding: '3rem' }}>
                             <h2 style={{ fontSize: '2rem', marginBottom: '2rem', color: 'var(--color-secondary)' }}>Send a Message</h2>
 
+                            {/* Success Message */}
+                            {showSuccess && (
+                                <div style={{
+                                    marginBottom: '2rem',
+                                    padding: '1.5rem',
+                                    borderRadius: '12px',
+                                    background: 'linear-gradient(135deg, rgba(34, 197, 94, 0.1) 0%, rgba(34, 197, 94, 0.05) 100%)',
+                                    border: '2px solid rgba(34, 197, 94, 0.3)',
+                                    color: '#16a34a',
+                                    textAlign: 'center',
+                                    animation: 'slideDown 0.5s ease'
+                                }}>
+                                    <div style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>✓</div>
+                                    <h3 style={{ fontSize: '1.3rem', marginBottom: '0.5rem', color: '#16a34a' }}>Message Sent Successfully!</h3>
+                                    <p style={{ margin: 0, fontSize: '1rem' }}>Thank you for contacting us. We will get back to you soon.</p>
+                                </div>
+                            )}
+
                             <form
                                 action="https://formsubmit.co/contact@berniceenang.me"
                                 method="POST"
@@ -162,6 +196,8 @@ const Contact = () => {
                                 <input type="hidden" name="_template" value="table" />
                                 <input type="text" name="_honey" style={{ display: 'none' }} />
                                 <input type="hidden" name="_subject" value="New Contact Form Submission" />
+                                <input type="hidden" name="_next" value={`${window.location.origin}/contact?success=true`} />
+                                <input type="hidden" name="_autoresponse" value="Thank you for contacting us! We will get back to you soon." />
 
                                 <div style={{ marginBottom: '1.5rem' }}>
                                     <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: '500', color: 'var(--color-secondary)' }}>
