@@ -10,6 +10,7 @@ const Contact = () => {
     });
 
     const [formStatus, setFormStatus] = useState('');
+    const [isSubmitting, setIsSubmitting] = useState(false);
 
     const handleChange = (e) => {
         setFormData({
@@ -18,15 +19,36 @@ const Contact = () => {
         });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        setFormStatus('Thank you! Your message has been received. We will get back to you soon.');
-        console.log('Form submitted:', formData);
+        setIsSubmitting(true);
+        setFormStatus('');
 
-        setTimeout(() => {
-            setFormData({ name: '', email: '', phone: '', service: '', message: '' });
-            setFormStatus('');
-        }, 3000);
+        try {
+            // Create mailto link with form data
+            const subject = encodeURIComponent(`New Contact Form Submission from ${formData.name}`);
+            const body = encodeURIComponent(
+                `Name: ${formData.name}\n` +
+                `Email: ${formData.email}\n` +
+                `Phone: ${formData.phone}\n` +
+                `Service Interested In: ${formData.service}\n\n` +
+                `Message:\n${formData.message}`
+            );
+
+            // Open mailto link
+            window.location.href = `mailto:contact@berniceenang.me?subject=${subject}&body=${body}`;
+
+            setFormStatus('Thank you! Your message has been prepared. Please send it from your email client.');
+
+            setTimeout(() => {
+                setFormData({ name: '', email: '', phone: '', service: '', message: '' });
+                setFormStatus('');
+                setIsSubmitting(false);
+            }, 5000);
+        } catch (error) {
+            setFormStatus('There was an error. Please try again or email us directly at contact@berniceenang.me');
+            setIsSubmitting(false);
+        }
     };
 
     const socialLinks = [
@@ -107,8 +129,8 @@ const Contact = () => {
                                     <span style={{ fontSize: '1.5rem' }}>📧</span>
                                     <div>
                                         <strong style={{ display: 'block', color: 'var(--color-secondary)' }}>Email</strong>
-                                        <a href="mailto:contact@bernineenang.me" style={{ color: 'var(--color-primary)', textDecoration: 'none' }}>
-                                            contact@bernineenang.me
+                                        <a href="mailto:contact@berniceenang.me" style={{ color: 'var(--color-primary)', textDecoration: 'none' }}>
+                                            contact@berniceenang.me
                                         </a>
                                     </div>
                                 </div>
@@ -302,9 +324,16 @@ const Contact = () => {
                                 <button
                                     type="submit"
                                     className="btn btn-primary"
-                                    style={{ width: '100%', fontSize: '1.1rem', padding: '1rem' }}
+                                    disabled={isSubmitting}
+                                    style={{
+                                        width: '100%',
+                                        fontSize: '1.1rem',
+                                        padding: '1rem',
+                                        opacity: isSubmitting ? 0.7 : 1,
+                                        cursor: isSubmitting ? 'not-allowed' : 'pointer'
+                                    }}
                                 >
-                                    Send Message
+                                    {isSubmitting ? 'Preparing...' : 'Send Message'}
                                 </button>
 
                                 {formStatus && (
