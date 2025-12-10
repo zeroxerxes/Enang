@@ -10,6 +10,8 @@ const Contact = () => {
     });
 
     const [showSuccess, setShowSuccess] = useState(false);
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [errorMessage, setErrorMessage] = useState('');
 
     useEffect(() => {
         // Check if redirected back with success parameter
@@ -30,6 +32,46 @@ const Contact = () => {
             ...formData,
             [e.target.name]: e.target.value
         });
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setIsSubmitting(true);
+        setErrorMessage('');
+        setShowSuccess(false);
+
+        try {
+            const response = await fetch('https://formsubmit.co/ajax/contact@berniceenang.me', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify({
+                    name: formData.name,
+                    email: formData.email,
+                    phone: formData.phone,
+                    service: formData.service,
+                    message: formData.message,
+                    _subject: 'New Contact Form Submission from Website',
+                    _template: 'box'
+                })
+            });
+
+            if (response.ok) {
+                setShowSuccess(true);
+                setFormData({ name: '', email: '', phone: '', service: '', message: '' });
+                setTimeout(() => {
+                    setShowSuccess(false);
+                }, 8000);
+            } else {
+                setErrorMessage('There was an error sending your message. Please try again or email us directly at contact@berniceenang.me');
+            }
+        } catch (error) {
+            setErrorMessage('There was an error sending your message. Please try again or email us directly at contact@berniceenang.me');
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     const socialLinks = [
@@ -187,15 +229,21 @@ const Contact = () => {
                                 </div>
                             )}
 
-                            <form
-                                action="https://formsubmit.co/contact@berniceenang.me"
-                                method="POST"
-                            >
-                                {/* FormSubmit Configuration */}
-                                <input type="hidden" name="_captcha" value="false" />
-                                <input type="hidden" name="_template" value="box" />
-                                <input type="hidden" name="_next" value="https://berniceenang.me/contact?success=true" />
-                                <input type="hidden" name="_subject" value="New Contact Form Submission from Website" />
+                            {errorMessage && (
+                                <div style={{
+                                    marginBottom: '2rem',
+                                    padding: '1.5rem',
+                                    borderRadius: '12px',
+                                    background: 'rgba(239, 68, 68, 0.1)',
+                                    border: '2px solid rgba(239, 68, 68, 0.3)',
+                                    color: '#dc2626',
+                                    textAlign: 'center'
+                                }}>
+                                    <p style={{ margin: 0, fontSize: '1rem' }}>{errorMessage}</p>
+                                </div>
+                            )}
+
+                            <form onSubmit={handleSubmit}>
 
                                 <div style={{ marginBottom: '1.5rem' }}>
                                     <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: '500', color: 'var(--color-secondary)' }}>
@@ -333,13 +381,16 @@ const Contact = () => {
                                 <button
                                     type="submit"
                                     className="btn btn-primary"
+                                    disabled={isSubmitting}
                                     style={{
                                         width: '100%',
                                         fontSize: '1.1rem',
-                                        padding: '1rem'
+                                        padding: '1rem',
+                                        opacity: isSubmitting ? 0.7 : 1,
+                                        cursor: isSubmitting ? 'not-allowed' : 'pointer'
                                     }}
                                 >
-                                    Send Message
+                                    {isSubmitting ? 'Sending...' : 'Send Message'}
                                 </button>
                             </form>
                         </div>
