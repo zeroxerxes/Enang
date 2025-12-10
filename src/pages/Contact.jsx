@@ -9,54 +9,11 @@ const Contact = () => {
         message: ''
     });
 
-    const [formStatus, setFormStatus] = useState('');
-    const [isSubmitting, setIsSubmitting] = useState(false);
-
     const handleChange = (e) => {
         setFormData({
             ...formData,
             [e.target.name]: e.target.value
         });
-    };
-
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        setIsSubmitting(true);
-        setFormStatus('');
-
-        try {
-            const response = await fetch('https://formsubmit.co/contact@berniceenang.me', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Accept': 'application/json'
-                },
-                body: JSON.stringify({
-                    name: formData.name,
-                    email: formData.email,
-                    phone: formData.phone,
-                    service: formData.service,
-                    message: formData.message,
-                    _subject: `New Contact Form Submission from ${formData.name}`,
-                    _captcha: 'false',
-                    _template: 'table'
-                })
-            });
-
-            if (response.ok) {
-                setFormStatus('Thank you! Your message has been sent successfully. We will get back to you soon.');
-                setFormData({ name: '', email: '', phone: '', service: '', message: '' });
-            } else {
-                setFormStatus('There was an error sending your message. Please try again or email us directly at contact@berniceenang.me');
-            }
-        } catch (error) {
-            setFormStatus('There was an error sending your message. Please try again or email us directly at contact@berniceenang.me');
-        } finally {
-            setIsSubmitting(false);
-            setTimeout(() => {
-                setFormStatus('');
-            }, 8000);
-        }
     };
 
     const socialLinks = [
@@ -196,7 +153,16 @@ const Contact = () => {
                         <div className="glass-card animate-slide-up delay-200" style={{ padding: '3rem' }}>
                             <h2 style={{ fontSize: '2rem', marginBottom: '2rem', color: 'var(--color-secondary)' }}>Send a Message</h2>
 
-                            <form onSubmit={handleSubmit}>
+                            <form
+                                action="https://formsubmit.co/contact@berniceenang.me"
+                                method="POST"
+                            >
+                                {/* FormSubmit Configuration */}
+                                <input type="hidden" name="_captcha" value="false" />
+                                <input type="hidden" name="_template" value="table" />
+                                <input type="text" name="_honey" style={{ display: 'none' }} />
+                                <input type="hidden" name="_subject" value="New Contact Form Submission" />
+
                                 <div style={{ marginBottom: '1.5rem' }}>
                                     <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: '500', color: 'var(--color-secondary)' }}>
                                         Full Name *
@@ -329,34 +295,18 @@ const Contact = () => {
                                     />
                                 </div>
 
+
                                 <button
                                     type="submit"
                                     className="btn btn-primary"
-                                    disabled={isSubmitting}
                                     style={{
                                         width: '100%',
                                         fontSize: '1.1rem',
-                                        padding: '1rem',
-                                        opacity: isSubmitting ? 0.7 : 1,
-                                        cursor: isSubmitting ? 'not-allowed' : 'pointer'
+                                        padding: '1rem'
                                     }}
                                 >
-                                    {isSubmitting ? 'Preparing...' : 'Send Message'}
+                                    Send Message
                                 </button>
-
-                                {formStatus && (
-                                    <div style={{
-                                        marginTop: '1.5rem',
-                                        padding: '1rem',
-                                        borderRadius: '8px',
-                                        background: 'rgba(34, 197, 94, 0.1)',
-                                        border: '1px solid rgba(34, 197, 94, 0.3)',
-                                        color: '#16a34a',
-                                        textAlign: 'center'
-                                    }}>
-                                        {formStatus}
-                                    </div>
-                                )}
                             </form>
                         </div>
                     </div>
