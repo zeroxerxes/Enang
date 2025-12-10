@@ -17,7 +17,7 @@ const Portfolio = () => {
             title: 'Leadership Development Workshop',
             category: 'workshops',
             description: 'Empowering future leaders through comprehensive soft skills training and identity development.',
-            image: '/assets/projects/project1.jpg',
+            image: 'https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800&q=80',
             tags: ['Leadership', 'Training', 'Growth']
         },
         {
@@ -25,7 +25,7 @@ const Portfolio = () => {
             title: 'Family Healing Initiative',
             category: 'community',
             description: 'Supporting families through counseling and community-based healing programs.',
-            image: '/assets/projects/project2.jpg',
+            image: 'https://images.unsplash.com/photo-1609220136736-443140cffec6?w=800&q=80',
             tags: ['Family', 'Healing', 'Community']
         },
         {
@@ -33,7 +33,7 @@ const Portfolio = () => {
             title: 'Executive Coaching Program',
             category: 'coaching',
             description: 'One-on-one coaching sessions for professionals seeking personal and career growth.',
-            image: '/assets/projects/project3.jpg',
+            image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80',
             tags: ['Executive', 'Coaching', 'Professional']
         },
         {
@@ -41,7 +41,7 @@ const Portfolio = () => {
             title: 'Youth Empowerment Series',
             category: 'workshops',
             description: 'Engaging young minds through interactive workshops on identity and self-discovery.',
-            image: '/assets/projects/project4.jpg',
+            image: 'https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?w=800&q=80',
             tags: ['Youth', 'Empowerment', 'Identity']
         },
         {
@@ -49,7 +49,7 @@ const Portfolio = () => {
             title: 'Corporate Training Sessions',
             category: 'workshops',
             description: 'Customized training programs for organizations focused on team building and communication.',
-            image: '/assets/projects/project5.jpg',
+            image: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80',
             tags: ['Corporate', 'Team Building', 'Communication']
         },
         {
@@ -57,7 +57,7 @@ const Portfolio = () => {
             title: 'Community Outreach Program',
             category: 'community',
             description: 'Grassroots initiatives bringing healing and support to underserved communities.',
-            image: '/assets/projects/project6.jpg',
+            image: 'https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=800&q=80',
             tags: ['Outreach', 'Support', 'Impact']
         }
     ];
@@ -70,7 +70,7 @@ const Portfolio = () => {
         <div className="animate-fade-in">
             {/* Hero Section */}
             <section style={{
-                background: 'linear-gradient(135deg, #2C3E50 0%, #34495E 100%)',
+                background: '#261616',
                 padding: '8rem 0 6rem',
                 position: 'relative',
                 overflow: 'hidden'
@@ -86,7 +86,7 @@ const Portfolio = () => {
                         fontFamily: 'var(--font-heading)'
                     }}>
                         My <span style={{
-                            background: 'linear-gradient(135deg, #D4AF37 0%, #C68E76 100%)',
+                            background: 'rgb(255 34 53)',
                             WebkitBackgroundClip: 'text',
                             WebkitTextFillColor: 'transparent',
                             backgroundClip: 'text'
@@ -129,7 +129,7 @@ const Portfolio = () => {
                                         ? 'none'
                                         : '2px solid rgba(198, 142, 118, 0.3)',
                                     background: selectedCategory === cat.id
-                                        ? 'linear-gradient(135deg, #C68E76 0%, #D4AF37 100%)'
+                                        ? 'linear-gradient(135deg, #C68E76 0%, rgb(255 34 53) 100%)'
                                         : 'transparent',
                                     color: selectedCategory === cat.id ? 'white' : 'var(--color-secondary)',
                                     fontWeight: '600',
@@ -189,7 +189,7 @@ const Portfolio = () => {
                                     position: 'relative',
                                     height: '250px',
                                     overflow: 'hidden',
-                                    background: 'linear-gradient(135deg, #C68E76 0%, #D4AF37 100%)'
+                                    background: 'linear-gradient(135deg, #C68E76 0%, rgb(255 34 53) 100%)'
                                 }}>
                                     <img
                                         src={project.image}
@@ -301,7 +301,7 @@ const Portfolio = () => {
 
             {/* Qualifications Section */}
             <section className="section" style={{
-                background: 'linear-gradient(135deg, #2C3E50 0%, #34495E 100%)',
+                background: '#261616',
                 position: 'relative',
                 overflow: 'hidden'
             }}>
@@ -315,7 +315,7 @@ const Portfolio = () => {
                         color: 'white'
                     }}>
                         Qualifications & <span style={{
-                            background: 'linear-gradient(135deg, #D4AF37 0%, #C68E76 100%)',
+                            background: 'linear-gradient(135deg, rgb(255 34 53) 0%, #C68E76 100%)',
                             WebkitBackgroundClip: 'text',
                             WebkitTextFillColor: 'transparent',
                             backgroundClip: 'text'
@@ -341,13 +341,13 @@ const Portfolio = () => {
                         <div className="glass-card animate-slide-up" style={{
                             padding: '2.5rem',
                             background: 'rgba(255, 255, 255, 0.95)',
-                            borderTop: '4px solid #D4AF37'
+                            borderTop: '4px solid rgb(255 34 53)'
                         }}>
                             <div style={{
                                 width: '60px',
                                 height: '60px',
                                 borderRadius: '12px',
-                                background: 'linear-gradient(135deg, #C68E76 0%, #D4AF37 100%)',
+                                background: 'linear-gradient(135deg, #C68E76 0%, rgb(255 34 53) 100%)',
                                 display: 'flex',
                                 alignItems: 'center',
                                 justifyContent: 'center',
@@ -402,7 +402,7 @@ const Portfolio = () => {
                                 width: '60px',
                                 height: '60px',
                                 borderRadius: '12px',
-                                background: 'linear-gradient(135deg, #D4AF37 0%, #C68E76 100%)',
+                                background: 'linear-gradient(135deg, rgb(255 34 53) 0%, #C68E76 100%)',
                                 display: 'flex',
                                 alignItems: 'center',
                                 justifyContent: 'center',
@@ -439,7 +439,7 @@ const Portfolio = () => {
                                         gap: '0.75rem',
                                         borderBottom: i < 4 ? '1px solid rgba(198, 142, 118, 0.1)' : 'none'
                                     }}>
-                                        <span style={{ color: '#D4AF37', fontSize: '1.2rem' }}>✓</span>
+                                        <span style={{ color: 'rgb(255 34 53)', fontSize: '1.2rem' }}>✓</span>
                                         {cert}
                                     </li>
                                 ))}
@@ -629,7 +629,7 @@ const Portfolio = () => {
                                     style={{
                                         padding: '0.5rem 1.25rem',
                                         borderRadius: '25px',
-                                        background: 'linear-gradient(135deg, #C68E76 0%, #D4AF37 100%)',
+                                        background: 'linear-gradient(135deg, #C68E76 0%, rgb(255 34 53) 100%)',
                                         color: 'white',
                                         fontSize: '0.9rem',
                                         fontWeight: '600'

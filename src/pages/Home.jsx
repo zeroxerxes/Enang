@@ -24,11 +24,11 @@ const Home = () => {
         <div className="container" style={{ display: 'flex', alignItems: 'center', gap: '4rem', flexWrap: 'wrap-reverse', position: 'relative', zIndex: 1 }}>
           <div style={{ flex: 1, minWidth: '300px', zIndex: 10 }}>
             <h1 className="animate-slide-up" style={{ fontSize: 'clamp(3rem, 5vw, 4.5rem)', marginBottom: '1.5rem', lineHeight: '1.1' }}>
-              Healing Families,<br />
-              <span className="text-gradient">Rebuilding Lives.</span>
+              Finding you ,<br />
+              <span className="text-gradient">Building Communities.</span>
             </h1>
             <p className="animate-slide-up delay-100" style={{ fontSize: '1.25rem', color: 'var(--color-text-muted)', marginBottom: '2.5rem', maxWidth: '550px' }}>
-              I am Bernice Enang Nso Keshu. An Identity Development Counsellor, Soft Skills Trainer, and Life Coach helping you find wholeness and purpose.
+              I am BENK. Award winning Human Development Expert, Professional Speaker,I help you find wholeness and Uniqueness.
             </p>
             <div className="animate-slide-up delay-200" style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
               <Link to="/about" className="btn btn-primary">My Journey</Link>

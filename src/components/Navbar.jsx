@@ -92,7 +92,7 @@ const Navbar = () => {
                             backgroundClip: 'text',
                             lineHeight: '1.2'
                         }}>
-                            Bernice Keshu
+                            Bernice Enang
                         </div>
                         <div style={{
                             fontSize: '0.55rem',

@@ -4,33 +4,33 @@ import Timeline from '../components/Timeline';
 const About = () => {
     const journeyEvents = [
         {
-            year: '2015',
+            year: '2009',
             title: 'The Calling',
             description: 'Discovered my passion for identity development and counselling through personal experiences and observations of family dynamics.',
             icon: '✨'
         },
         {
-            year: '2018',
+            year: '2009 - 2025',
             title: 'Professional Training',
             description: 'Completed advanced certifications in counselling psychology and life coaching, building a strong foundation for transformative work.',
             icon: '🎓'
         },
         {
-            year: '2020',
+            year: '2013',
             title: 'Community Impact Begins',
             description: 'Started conducting workshops and training sessions, reaching hundreds of individuals and families in need of healing.',
             icon: '🌱'
         },
         {
-            year: '2023',
+            year: '2012 - Present',
             title: 'BENK Assist & FIHOF',
-            description: 'Established BENK Assist for professional development and First Housebond Foundation to empower men and rebuild families.',
+            description: 'Established BENK Assist for professional development ,empowering men and rebuild families.',
             icon: '🏆'
         },
         {
             year: 'Present',
             title: 'Expanding Horizons',
-            description: 'Continuing to transform lives through coaching, training, and community outreach, with a vision for even greater impact.',
+            description: 'Continuing to transform lives through coaching, training, and community outreach.Fihof giving back and transforming lives',
             icon: '🚀'
         }
     ];
@@ -47,16 +47,17 @@ const About = () => {
                 <div style={{ position: 'absolute', bottom: '20%', left: '8%', width: '150px', height: '150px', borderRadius: '30% 70% 70% 30% / 30% 30% 70% 70%', background: 'rgba(198, 142, 118, 0.08)', transform: 'rotate(25deg)' }}></div>
 
                 <div className="container" style={{ position: 'relative', zIndex: 1 }}>
-                    <div style={{ maxWidth: '900px', margin: '0 auto' }}>
+                    <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
                         <h1 className="animate-slide-up" style={{ fontSize: '3rem', marginBottom: '1rem', color: 'var(--color-secondary)', textAlign: 'center' }}>
-                            Bernice Enang-Nso Keshi
+                            Bernice Enang-Nso Keshu
                         </h1>
                         <p className="animate-slide-up delay-100" style={{ fontSize: '1.3rem', textAlign: 'center', color: 'var(--color-primary)', marginBottom: '3rem', fontStyle: 'italic' }}>
                             "Transformation starts from within — with grace and resilience."
                         </p>
 
-                        <div style={{ display: 'flex', gap: '3rem', flexWrap: 'wrap', alignItems: 'flex-start' }}>
-                            <div className="animate-scale-in delay-100" style={{ flex: '0 0 300px', position: 'sticky', top: '100px' }}>
+                        {/* Profile Image and Professional Profile - Centered */}
+                        <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '4rem' }}>
+                            <div className="animate-scale-in delay-100" style={{ maxWidth: '350px', width: '100%' }}>
                                 <img src="/assets/profile-about.png" alt="Bernice Keshu" style={{ borderRadius: '20px', boxShadow: 'var(--shadow-lg)', width: '100%' }} />
                                 <div className="glass-card" style={{ marginTop: '1.5rem', padding: '1.5rem', textAlign: 'center' }}>
                                     <h3 style={{ fontSize: '1.2rem', marginBottom: '0.5rem', color: 'var(--color-primary)' }}>Professional Profile</h3>
@@ -65,47 +66,101 @@ const About = () => {
                                     </p>
                                 </div>
                             </div>
+                        </div>
 
-                            <div style={{ flex: 1, minWidth: '300px' }}>
-                                <h2 className="animate-slide-up delay-200" style={{ fontSize: '2rem', marginBottom: '1.5rem', color: 'var(--color-primary)' }}>My Story</h2>
-                                <p className="animate-slide-up delay-200" style={{ fontSize: '1.1rem', marginBottom: '1.5rem', color: '#475569', lineHeight: '1.8' }}>
-                                    My story begins with a deep curiosity about who I am, what makes me whole, and what breaks my wholeness. This journey led me through an inner battle with self-doubt and impostor syndrome. Through that transition, I witnessed firsthand how unhealed experiences show up in how we speak, work, parent, and relate to others.
-                                </p>
+                        {/* My Story - Full Width */}
+                        <div className="animate-slide-up delay-200" style={{ marginBottom: '4rem' }}>
+                            <h2 style={{ fontSize: '2rem', marginBottom: '1.5rem', color: 'var(--color-primary)', textAlign: 'center' }}>My Story</h2>
+                            <p style={{ fontSize: '1.1rem', marginBottom: '1.5rem', color: '#475569', lineHeight: '1.8', maxWidth: '900px', margin: '0 auto' }}>
+                                From a place of deep curiosity about who I am, what makes me whole, and what breaks my wholeness, i embarked on a journey to find me
+                                ,through an inner battle with self-doubt and impostor syndrome.
+                                During that transition, I witnessed firsthand how unhealed experiences show up in how we speak, work, parent, and relate to others.
+                                I felt called to respond — to guide others through transformation, healing, and personal mastery.
+                            </p>
+                        </div>
 
-                                <p className="animate-slide-up delay-300" style={{ fontSize: '1.1rem', marginBottom: '1.5rem', color: '#475569', lineHeight: '1.8' }}>
-                                    I felt called to respond — to guide others through transformation, healing, and personal mastery.
-                                </p>
-
-                                <h2 className="animate-slide-up delay-400" style={{ fontSize: '2rem', marginTop: '3rem', marginBottom: '1.5rem', color: 'var(--color-primary)' }}>Mission & Purpose</h2>
-                                <p className="animate-slide-up delay-500" style={{ fontSize: '1.1rem', marginBottom: '1.5rem', color: '#475569', lineHeight: '1.8' }}>
-                                    Helping individuals and organizations cultivate character, build identity, harness potential, enhance emotional intelligence, and improve performance and excellence.
-                                </p>
-                                <p className="animate-slide-up delay-500" style={{ fontSize: '1.1rem', marginBottom: '1.5rem', color: '#475569', lineHeight: '1.8' }}>
-                                    We design counselling, coaching, and training experiences that strengthen self-awareness, communication, and resilience.
-                                </p>
-
-                                <h2 className="animate-slide-up delay-600" style={{ fontSize: '2rem', marginTop: '3rem', marginBottom: '1.5rem', color: 'var(--color-primary)' }}>My Approach</h2>
-                                <p className="animate-slide-up delay-700" style={{ fontSize: '1.1rem', marginBottom: '1.5rem', color: '#475569', lineHeight: '1.8' }}>
-                                    My work weaves together <strong>psychologically assessed counselling</strong> and <strong>evidence-based coaching</strong>, creating a balanced approach to human transformation and growth.
-                                </p>
-
-                                <div className="glass-card animate-slide-up delay-800" style={{ padding: '2rem', marginTop: '2rem', background: 'rgba(198, 142, 118, 0.05)' }}>
-                                    <h3 style={{ fontSize: '1.3rem', marginBottom: '1rem', color: 'var(--color-secondary)' }}>Core Principles</h3>
-                                    <ul style={{ listStyle: 'none', padding: 0 }}>
-                                        <li style={{ padding: '0.5rem 0', color: '#475569', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-                                            <span style={{ color: 'var(--color-primary)', fontSize: '1.2rem' }}>✓</span>
-                                            Empathy first
-                                        </li>
-                                        <li style={{ padding: '0.5rem 0', color: '#475569', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-                                            <span style={{ color: 'var(--color-primary)', fontSize: '1.2rem' }}>✓</span>
-                                            Psychological Assessment – Counselling plans and tools
-                                        </li>
-                                        <li style={{ padding: '0.5rem 0', color: '#475569', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-                                            <span style={{ color: 'var(--color-primary)', fontSize: '1.2rem' }}>✓</span>
-                                            Evidence-based methods
-                                        </li>
-                                    </ul>
+                        {/* Mission & Purpose - Two Column Grid */}
+                        <div className="animate-slide-up delay-300" style={{ marginBottom: '4rem' }}>
+                            <h2 style={{ fontSize: '2rem', marginBottom: '2rem', color: 'var(--color-primary)', textAlign: 'center' }}>Mission & Purpose</h2>
+                            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
+                                <div className="glass-card" style={{ padding: '2rem' }}>
+                                    <div style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>🎯</div>
+                                    <h3 style={{ fontSize: '1.3rem', marginBottom: '1rem', color: 'var(--color-secondary)' }}>Our Mission</h3>
+                                    <p style={{ fontSize: '1.05rem', color: '#475569', lineHeight: '1.8' }}>
+                                        Helping individuals and organizations cultivate character, build identity, harness potential, enhance emotional intelligence, and improve performance and excellence.
+                                    </p>
                                 </div>
+                                <div className="glass-card" style={{ padding: '2rem' }}>
+                                    <div style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>💡</div>
+                                    <h3 style={{ fontSize: '1.3rem', marginBottom: '1rem', color: 'var(--color-secondary)' }}>Our Approach</h3>
+                                    <p style={{ fontSize: '1.05rem', color: '#475569', lineHeight: '1.8' }}>
+                                        We design counselling, coaching, and training experiences that strengthen self-awareness, communication, and resilience.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* P.R.E.A.C.H Values - Two Column Grid */}
+                        <div className="animate-slide-up delay-400">
+                            <h2 style={{ fontSize: '2rem', marginBottom: '2rem', color: 'var(--color-primary)', textAlign: 'center' }}>Our Core Values – P.R.E.A.C.H</h2>
+
+                            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '1.5rem', marginTop: '2rem' }}>
+                                {[
+                                    { letter: 'P', title: 'Presence', description: 'We show up with purpose, connecting authentically to guide transformation.' },
+                                    { letter: 'R', title: 'Respect', description: 'We honour each story with dignity, confidentiality, and inclusion.' },
+                                    { letter: 'E', title: 'Empathy', description: 'We listen to understand, helping people feel seen, valued, and capable.' },
+                                    { letter: 'A', title: 'Accountability', description: 'We uphold integrity and professionalism in every commitment.' },
+                                    { letter: 'C', title: 'Courage', description: 'We encourage bold thinking and brave choices for meaningful growth.' },
+                                    { letter: 'H', title: 'Hope', description: 'We believe in transformation and the power of second chances.' }
+                                ].map((value, index) => (
+                                    <div
+                                        key={index}
+                                        className={`animate-slide-up delay-${400 + (index * 50)}`}
+                                        style={{
+                                            display: 'flex',
+                                            gap: '1rem',
+                                            alignItems: 'flex-start',
+                                            padding: '1.5rem',
+                                            borderRadius: '12px',
+                                            background: 'rgba(198, 142, 118, 0.03)',
+                                            transition: 'all 0.3s ease'
+                                        }}
+                                        onMouseOver={(e) => {
+                                            e.currentTarget.style.background = 'rgba(198, 142, 118, 0.08)';
+                                            e.currentTarget.style.transform = 'translateY(-5px)';
+                                            e.currentTarget.style.boxShadow = '0 10px 30px rgba(0,0,0,0.1)';
+                                        }}
+                                        onMouseOut={(e) => {
+                                            e.currentTarget.style.background = 'rgba(198, 142, 118, 0.03)';
+                                            e.currentTarget.style.transform = 'translateY(0)';
+                                            e.currentTarget.style.boxShadow = 'none';
+                                        }}
+                                    >
+                                        <div style={{
+                                            width: '50px',
+                                            height: '50px',
+                                            borderRadius: '12px',
+                                            background: 'linear-gradient(135deg, var(--color-primary), var(--color-accent))',
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            justifyContent: 'center',
+                                            color: 'white',
+                                            fontWeight: 'bold',
+                                            fontSize: '1.4rem',
+                                            flexShrink: 0
+                                        }}>
+                                            {value.letter}
+                                        </div>
+                                        <div>
+                                            <h3 style={{ fontSize: '1.2rem', marginBottom: '0.5rem', color: 'var(--color-secondary)' }}>
+                                                {value.title}
+                                            </h3>
+                                            <p style={{ fontSize: '1rem', color: '#64748B', lineHeight: '1.6', margin: 0 }}>
+                                                {value.description}
+                                            </p>
+                                        </div>
+                                    </div>
+                                ))}
                             </div>
                         </div>
                     </div>

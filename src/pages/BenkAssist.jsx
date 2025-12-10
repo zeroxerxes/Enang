@@ -6,7 +6,7 @@ const BenkAssist = () => {
             title: 'Educators & Schools',
             icon: '🎓',
             programs: [
-                'Classroom connections',
+                'Emotional Inteligence  ',
                 'Empathy and youth mentorship',
                 'Social intelligence',
                 'Adversity intelligence',
@@ -30,6 +30,7 @@ const BenkAssist = () => {
             icon: '💼',
             programs: [
                 'Workplace readiness',
+                'Emotional Inteligence  ',
                 'Grooming and etiquette',
                 'Resilience under pressure'
             ]
@@ -107,15 +108,21 @@ const BenkAssist = () => {
                                 Get Started Today
                             </a>
                         </div>
+
                     </div>
                 </div>
             </section>
+
 
             {/* Services Overview */}
             <section className="section" style={{
                 background: 'linear-gradient(180deg, #FAF9F6 0%, #FFFFFF 100%)'
             }}>
+
+
                 <div className="container">
+
+                    
                     <h2 className="animate-slide-up" style={{
                         fontSize: '2.5rem',
                         textAlign: 'center',
@@ -307,12 +314,12 @@ const BenkAssist = () => {
                         <div className="glass-card animate-slide-up delay-200" style={{
                             padding: '3rem',
                             background: 'rgba(139, 69, 69, 0.05)',
-                            borderLeft: '4px solid #A0522D'
+                            borderLeft: '4px solid rgb(5 53 44)'
                         }}>
                             <p style={{
                                 fontSize: '1.3rem',
                                 fontStyle: 'italic',
-                                color: '#8B4545',
+                                color: 'rgb(5 53 44)',
                                 lineHeight: '1.8'
                             }}>
                                 "Empowering individuals and structures with inner tools to find their uniqueness and develop the soft skills to thrive."
@@ -352,7 +359,7 @@ const BenkAssist = () => {
                         fontSize: '1.1rem',
                         boxShadow: '0 10px 30px rgba(0,0,0,0.3)'
                     }}>
-                        Schedule a Consultation
+                        Let's Talk
                     </a>
                 </div>
             </section>

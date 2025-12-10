@@ -53,7 +53,7 @@ const Footer = () => {
                             fontSize: '1.5rem',
                             marginBottom: '1rem',
                             fontFamily: 'var(--font-heading)',
-                            color: '#D4AF37'
+                            color: 'rgb(255 34 53)'
                         }}>
                             Bernice Keshu
                         </h3>
@@ -66,7 +66,7 @@ const Footer = () => {
                         <h4 style={{
                             fontSize: '1.2rem',
                             marginBottom: '1rem',
-                            color: '#D4AF37'
+                            color: 'rgb(255 34 53)'
                         }}>
                             Quick Links
                         </h4>
@@ -80,7 +80,7 @@ const Footer = () => {
                                             textDecoration: 'none',
                                             transition: 'color 0.3s ease'
                                         }}
-                                        onMouseOver={(e) => e.target.style.color = '#D4AF37'}
+                                        onMouseOver={(e) => e.target.style.color = 'rgb(255 34 53)'}
                                         onMouseOut={(e) => e.target.style.color = 'rgba(255, 255, 255, 0.8)'}
                                     >
                                         {item}
@@ -94,12 +94,12 @@ const Footer = () => {
                         <h4 style={{
                             fontSize: '1.2rem',
                             marginBottom: '1rem',
-                            color: '#D4AF37'
+                            color: 'rgb(255 34 53)'
                         }}>
                             Contact
                         </h4>
                         <p style={{ color: 'rgba(255, 255, 255, 0.8)', marginBottom: '0.5rem' }}>
-                            📧 contact@bernicekeshu.com
+                            📧 contact@bernineenang.me
                         </p>
                         <p style={{ color: 'rgba(255, 255, 255, 0.8)', marginBottom: '0.5rem' }}>
                             📱 +237 123 456 789
@@ -113,7 +113,7 @@ const Footer = () => {
                         <h4 style={{
                             fontSize: '1.2rem',
                             marginBottom: '1rem',
-                            color: '#D4AF37'
+                            color: 'rgb(255 34 53)'
                         }}>
                             Follow Me
                         </h4>
@@ -137,7 +137,7 @@ const Footer = () => {
                                         textDecoration: 'none'
                                     }}
                                     onMouseOver={(e) => {
-                                        e.currentTarget.style.background = '#D4AF37';
+                                        e.currentTarget.style.background = 'rgb(255 34 53)';
                                         e.currentTarget.style.transform = 'translateY(-3px)';
                                     }}
                                     onMouseOut={(e) => {

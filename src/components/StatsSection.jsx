@@ -70,14 +70,14 @@ const StatsSection = () => {
             gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'
         },
         {
-            number: 150,
+            number: 100,
             suffix: '+',
             label: 'Workshops Delivered',
             description: 'Impactful training sessions conducted',
             gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)'
         },
         {
-            number: 50,
+            number: 10,
             suffix: '+',
             label: 'Organizations Served',
             description: 'Companies transformed through our programs',

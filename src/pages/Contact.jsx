@@ -107,8 +107,8 @@ const Contact = () => {
                                     <span style={{ fontSize: '1.5rem' }}>📧</span>
                                     <div>
                                         <strong style={{ display: 'block', color: 'var(--color-secondary)' }}>Email</strong>
-                                        <a href="mailto:contact@bernicekeshu.com" style={{ color: 'var(--color-primary)', textDecoration: 'none' }}>
-                                            contact@bernicekeshu.com
+                                        <a href="mailto:contact@bernineenang.me" style={{ color: 'var(--color-primary)', textDecoration: 'none' }}>
+                                            contact@bernineenang.me
                                         </a>
                                     </div>
                                 </div>
@@ -117,17 +117,11 @@ const Contact = () => {
                                     <div>
                                         <strong style={{ display: 'block', color: 'var(--color-secondary)' }}>Phone</strong>
                                         <a href="tel:+237123456789" style={{ color: 'var(--color-primary)', textDecoration: 'none' }}>
-                                            +237 123 456 789
+                                            +237 6 50 07 84 29
                                         </a>
                                     </div>
                                 </div>
-                                <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                                    <span style={{ fontSize: '1.5rem' }}>📍</span>
-                                    <div>
-                                        <strong style={{ display: 'block', color: 'var(--color-secondary)' }}>Location</strong>
-                                        <span style={{ color: '#64748B' }}>Cameroon</span>
-                                    </div>
-                                </div>
+
                             </div>
 
                             <div className="animate-slide-up delay-400">
@@ -270,7 +264,8 @@ const Contact = () => {
                                         onBlur={(e) => e.target.style.borderColor = '#E2E8F0'}
                                     >
                                         <option value="">Select a service</option>
-                                        <option value="personal-coaching">Personal Coaching</option>
+                                        <option value="counseling">Counseling</option>
+                                        <option value="coaching">Coaching</option>
                                         <option value="soft-skills">Soft Skills Training</option>
                                         <option value="institutional">Institutional Support</option>
                                         <option value="fihof">FIHOF Programs</option>

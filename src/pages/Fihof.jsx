@@ -11,7 +11,7 @@ const Fihof = () => {
         {
             icon: '💬',
             title: 'Process Talk',
-            description: 'Safe spaces for men to share experiences, process emotions, and build authentic connections.',
+            description: 'A place where young boys and girls build character, learn values and principles and build authentic connections.',
             impact: '50+ Sessions Held'
         },
         {
@@ -36,17 +36,17 @@ const Fihof = () => {
     ];
 
     const stats = [
-        { number: '300+', label: 'Men Empowered' },
+        { number: '100+', label: 'Men Empowered' },
         { number: '50+', label: 'Families Restored' },
-        { number: '100+', label: 'Workshops Delivered' },
-        { number: '5', label: 'Years of Impact' }
+        { number: '20+', label: 'Workshops Delivered' },
+        { number: '3', label: 'Years of Impact' }
     ];
 
     return (
         <div className="animate-fade-in">
             {/* Hero Section */}
             <section style={{
-                background: 'linear-gradient(135deg, #19376D 0%, #2C5282 100%)',
+                background: '#261616',
                 padding: '8rem 0 6rem',
                 position: 'relative',
                 overflow: 'hidden'
@@ -85,12 +85,12 @@ const Fihof = () => {
 
                         <p className="animate-slide-up delay-100" style={{
                             fontSize: '1.4rem',
-                            color: '#E67E22',
+                            color: 'rgb(255 34 53)',
                             marginBottom: '1.5rem',
                             fontWeight: '600',
                             letterSpacing: '0.5px'
                         }}>
-                            Healing Families, Rebuilding Lives
+                            Building Families Empowering Communities
                         </p>
 
                         <p className="animate-slide-up delay-200" style={{
@@ -100,12 +100,11 @@ const Fihof = () => {
                             maxWidth: '700px',
                             margin: '0 auto 2.5rem'
                         }}>
-                            A foundation championing Modern Model Manhood, Global Citizenship, and Empowerment as pillars of strong families.
-                        </p>
+                            A Foundation championing male empowerment as a strong pillar for families </p>
 
                         <div className="animate-slide-up delay-300">
                             <a href="/contact" className="btn btn-primary" style={{
-                                background: '#E67E22',
+                                background: 'rgb(255 34 53)',
                                 color: 'white',
                                 padding: '1rem 2.5rem',
                                 fontSize: '1.1rem',
@@ -174,12 +173,12 @@ const Fihof = () => {
 
                         <div className="glass-card animate-slide-up delay-100" style={{
                             padding: '3rem',
-                            borderTop: '4px solid #E67E22'
+                            borderTop: '4px solid rgb(255 34 53)'
                         }}>
                             <h2 style={{
                                 fontSize: '2rem',
                                 marginBottom: '1.5rem',
-                                color: '#E67E22',
+                                color: 'rgb(255 34 53)',
                                 fontFamily: 'var(--font-heading)'
                             }}>
                                 Our Vision
@@ -285,7 +284,7 @@ const Fihof = () => {
 
             {/* Stats Section */}
             <section style={{
-                background: 'linear-gradient(135deg, #19376D 0%, #2C5282 100%)',
+                background: '#261616',
                 padding: '5rem 0',
                 position: 'relative',
                 overflow: 'hidden'
@@ -319,7 +318,7 @@ const Fihof = () => {
                                 <div style={{
                                     fontSize: '3.5rem',
                                     fontWeight: '700',
-                                    color: '#E67E22',
+                                    color: 'rgb(255 34 53)',
                                     marginBottom: '0.5rem',
                                     fontFamily: 'var(--font-heading)'
                                 }}>
