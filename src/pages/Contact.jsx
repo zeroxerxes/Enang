@@ -25,29 +25,37 @@ const Contact = () => {
         setFormStatus('');
 
         try {
-            // Create mailto link with form data
-            const subject = encodeURIComponent(`New Contact Form Submission from ${formData.name}`);
-            const body = encodeURIComponent(
-                `Name: ${formData.name}\n` +
-                `Email: ${formData.email}\n` +
-                `Phone: ${formData.phone}\n` +
-                `Service Interested In: ${formData.service}\n\n` +
-                `Message:\n${formData.message}`
-            );
+            const response = await fetch('https://formsubmit.co/contact@berniceenang.me', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify({
+                    name: formData.name,
+                    email: formData.email,
+                    phone: formData.phone,
+                    service: formData.service,
+                    message: formData.message,
+                    _subject: `New Contact Form Submission from ${formData.name}`,
+                    _captcha: 'false',
+                    _template: 'table'
+                })
+            });
 
-            // Open mailto link
-            window.location.href = `mailto:contact@berniceenang.me?subject=${subject}&body=${body}`;
-
-            setFormStatus('Thank you! Your message has been prepared. Please send it from your email client.');
-
-            setTimeout(() => {
+            if (response.ok) {
+                setFormStatus('Thank you! Your message has been sent successfully. We will get back to you soon.');
                 setFormData({ name: '', email: '', phone: '', service: '', message: '' });
-                setFormStatus('');
-                setIsSubmitting(false);
-            }, 5000);
+            } else {
+                setFormStatus('There was an error sending your message. Please try again or email us directly at contact@berniceenang.me');
+            }
         } catch (error) {
-            setFormStatus('There was an error. Please try again or email us directly at contact@berniceenang.me');
+            setFormStatus('There was an error sending your message. Please try again or email us directly at contact@berniceenang.me');
+        } finally {
             setIsSubmitting(false);
+            setTimeout(() => {
+                setFormStatus('');
+            }, 8000);
         }
     };
 
