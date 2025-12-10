@@ -102,7 +102,7 @@ const Footer = () => {
                             📧 contact@bernineenang.me
                         </p>
                         <p style={{ color: 'rgba(255, 255, 255, 0.8)', marginBottom: '0.5rem' }}>
-                            📱 +237 123 456 789
+                            📱 +237 650 07 84 29
                         </p>
                         <p style={{ color: 'rgba(255, 255, 255, 0.8)' }}>
                             📍 Cameroon
