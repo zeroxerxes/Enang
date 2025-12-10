@@ -193,11 +193,9 @@ const Contact = () => {
                             >
                                 {/* FormSubmit Configuration */}
                                 <input type="hidden" name="_captcha" value="false" />
-                                <input type="hidden" name="_template" value="table" />
-                                <input type="text" name="_honey" style={{ display: 'none' }} />
-                                <input type="hidden" name="_subject" value="New Contact Form Submission" />
-                                <input type="hidden" name="_next" value={`${window.location.origin}/contact?success=true`} />
-                                <input type="hidden" name="_autoresponse" value="Thank you for contacting us! We will get back to you soon." />
+                                <input type="hidden" name="_template" value="box" />
+                                <input type="hidden" name="_next" value="https://berniceenang.me/contact?success=true" />
+                                <input type="hidden" name="_subject" value="New Contact Form Submission from Website" />
 
                                 <div style={{ marginBottom: '1.5rem' }}>
                                     <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: '500', color: 'var(--color-secondary)' }}>
