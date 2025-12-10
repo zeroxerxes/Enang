@@ -40,37 +40,49 @@ const Contact = () => {
         setErrorMessage('');
         setShowSuccess(false);
 
+        console.log('Form submission started');
+        console.log('Form data:', formData);
+
         try {
+            console.log('Sending request to FormSubmit...');
+
+            // Use FormData instead of JSON to avoid CORS preflight issues
+            const formDataToSend = new FormData();
+            formDataToSend.append('name', formData.name);
+            formDataToSend.append('email', formData.email);
+            formDataToSend.append('phone', formData.phone);
+            formDataToSend.append('service', formData.service);
+            formDataToSend.append('message', formData.message);
+            formDataToSend.append('_subject', 'New Contact Form Submission from Website');
+            formDataToSend.append('_template', 'box');
+            formDataToSend.append('_captcha', 'false');
+
             const response = await fetch('https://formsubmit.co/ajax/contact@berniceenang.me', {
                 method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Accept': 'application/json'
-                },
-                body: JSON.stringify({
-                    name: formData.name,
-                    email: formData.email,
-                    phone: formData.phone,
-                    service: formData.service,
-                    message: formData.message,
-                    _subject: 'New Contact Form Submission from Website',
-                    _template: 'box'
-                })
+                body: formDataToSend
             });
 
+            console.log('Response status:', response.status);
+            const data = await response.json();
+            console.log('Response data:', data);
+
             if (response.ok) {
+                console.log('Success!');
                 setShowSuccess(true);
                 setFormData({ name: '', email: '', phone: '', service: '', message: '' });
                 setTimeout(() => {
                     setShowSuccess(false);
                 }, 8000);
             } else {
-                setErrorMessage('There was an error sending your message. Please try again or email us directly at contact@berniceenang.me');
+                console.error('Error response:', data);
+                setErrorMessage(data.message || 'There was an error sending your message. Please try again or email us directly at contact@berniceenang.me');
             }
         } catch (error) {
-            setErrorMessage('There was an error sending your message. Please try again or email us directly at contact@berniceenang.me');
+            console.error('Fetch error:', error);
+            setErrorMessage('Network error. Please check your connection or email us directly at contact@berniceenang.me');
         } finally {
             setIsSubmitting(false);
+            console.log('Form submission completed');
         }
     };
 
