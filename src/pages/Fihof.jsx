@@ -23,7 +23,7 @@ const Fihof = () => {
         {
             icon: '🤝',
             title: 'Intergenerational Dialogue',
-            description: 'Bridging the gap between older men and young boys through wisdom sharing and mentorship.',
+            description: 'Bridging the gap between older men ang young boys through wisdom sharing and mentorship in father circles.',
             impact: '100+ Connections Made'
         }
     ];
@@ -80,7 +80,7 @@ const Fihof = () => {
                             marginBottom: '1rem',
                             fontFamily: 'var(--font-heading)'
                         }}>
-                            First Housebond Foundation
+                            The First Housebond Foundation (FIHOF)
                         </h1>
 
                         <p className="animate-slide-up delay-100" style={{
@@ -129,12 +129,12 @@ const Fihof = () => {
                     }}>
                         <div className="glass-card animate-slide-up" style={{
                             padding: '3rem',
-                            borderTop: '4px solid #19376D'
+                            borderTop: '4px solid #154120ff'
                         }}>
                             <h2 style={{
                                 fontSize: '2rem',
                                 marginBottom: '1.5rem',
-                                color: '#19376D',
+                                color: '#154120ff',
                                 fontFamily: 'var(--font-heading)'
                             }}>
                                 Our Mission
@@ -153,7 +153,7 @@ const Fihof = () => {
                                 borderRadius: '12px',
                                 marginTop: '1.5rem'
                             }}>
-                                <h3 style={{ fontSize: '1.1rem', marginBottom: '1rem', color: '#19376D', fontWeight: '600' }}>Our Pillars:</h3>
+                                <h3 style={{ fontSize: '1.1rem', marginBottom: '1rem', color: '#154120ff', fontWeight: '600' }}>Our Pillars:</h3>
                                 <ul style={{ listStyle: 'none', padding: 0 }}>
                                     <li style={{ padding: '0.5rem 0', color: '#475569', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
                                         <span style={{ color: '#E67E22', fontSize: '1.2rem' }}>✓</span>
@@ -161,12 +161,17 @@ const Fihof = () => {
                                     </li>
                                     <li style={{ padding: '0.5rem 0', color: '#475569', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
                                         <span style={{ color: '#E67E22', fontSize: '1.2rem' }}>✓</span>
+                                        Empowering All for resilient society
+                                    </li>
+                                    <li style={{ padding: '0.5rem 0', color: '#475569', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+                                        <span style={{ color: '#E67E22', fontSize: '1.2rem' }}>✓</span>
                                         Global Citizenship
                                     </li>
                                     <li style={{ padding: '0.5rem 0', color: '#475569', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
                                         <span style={{ color: '#E67E22', fontSize: '1.2rem' }}>✓</span>
-                                        Empowerment
+                                        Socio economic development
                                     </li>
+
                                 </ul>
                             </div>
                         </div>
@@ -204,7 +209,7 @@ const Fihof = () => {
                         fontSize: '2.5rem',
                         textAlign: 'center',
                         marginBottom: '1rem',
-                        color: '#19376D'
+                        color: '#154120ff'
                     }}>
                         Our Initiatives
                     </h2>
@@ -238,7 +243,7 @@ const Fihof = () => {
                                     width: '80px',
                                     height: '80px',
                                     borderRadius: '50%',
-                                    background: 'linear-gradient(135deg, #19376D 0%, #2C5282 100%)',
+                                    background: 'linear-gradient(135deg, #154120ff 0%, #2C5282 100%)',
                                     display: 'flex',
                                     alignItems: 'center',
                                     justifyContent: 'center',
@@ -252,7 +257,7 @@ const Fihof = () => {
                                 <h3 style={{
                                     fontSize: '1.5rem',
                                     marginBottom: '1rem',
-                                    color: '#19376D',
+                                    color: '#154120ff',
                                     fontFamily: 'var(--font-heading)'
                                 }}>
                                     {initiative.title}
@@ -346,7 +351,7 @@ const Fihof = () => {
                         fontSize: '2.5rem',
                         textAlign: 'center',
                         marginBottom: '4rem',
-                        color: '#19376D'
+                        color: '#154120ff'
                     }}>
                         Our Core Values
                     </h2>
