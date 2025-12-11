@@ -17,7 +17,7 @@ const Portfolio = () => {
             title: 'Leadership Development Workshop',
             category: 'workshops',
             description: 'Empowering future leaders through comprehensive soft skills training and identity development.',
-            image: 'https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800&q=80',
+            image: 'photo-1531482615713-2afd69097998?w=800&q=80',
             tags: ['Leadership', 'Training', 'Growth']
         },
         {
@@ -25,7 +25,7 @@ const Portfolio = () => {
             title: 'Family Healing Initiative',
             category: 'community',
             description: 'Supporting families through counseling and community-based healing programs.',
-            image: 'https://images.unsplash.com/photo-1609220136736-443140cffec6?w=800&q=80',
+            image: 'photo-1609220136736-443140cffec6?w=800&q=80',
             tags: ['Family', 'Healing', 'Community']
         },
         {
@@ -33,7 +33,7 @@ const Portfolio = () => {
             title: 'Executive Coaching Program',
             category: 'coaching',
             description: 'One-on-one coaching sessions for professionals seeking personal and career growth.',
-            image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80',
+            image: 'photo-1573496359142-b8d87734a5a2?w=800&q=80',
             tags: ['Executive', 'Coaching', 'Professional']
         },
         {
@@ -41,7 +41,7 @@ const Portfolio = () => {
             title: 'Youth Empowerment Series',
             category: 'workshops',
             description: 'Engaging young minds through interactive workshops on identity and self-discovery.',
-            image: 'https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?w=800&q=80',
+            image: 'photo-1588196749597-9ff075ee6b5b?w=800&q=80',
             tags: ['Youth', 'Empowerment', 'Identity']
         },
         {
@@ -49,7 +49,7 @@ const Portfolio = () => {
             title: 'Corporate Training Sessions',
             category: 'workshops',
             description: 'Customized training programs for organizations focused on team building and communication.',
-            image: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80',
+            image: 'photo-1600880292203-757bb62b4baf?w=800&q=80',
             tags: ['Corporate', 'Team Building', 'Communication']
         },
         {
@@ -57,7 +57,7 @@ const Portfolio = () => {
             title: 'Community Outreach Program',
             category: 'community',
             description: 'Grassroots initiatives bringing healing and support to underserved communities.',
-            image: 'https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=800&q=80',
+            image: 'photo-1559027615-cd4628902d4a?w=800&q=80',
             tags: ['Outreach', 'Support', 'Impact']
         }
     ];
