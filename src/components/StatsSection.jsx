@@ -63,7 +63,7 @@ const StatCounter = ({ end, duration = 2000, suffix = '', prefix = '' }) => {
 const StatsSection = () => {
     const stats = [
         {
-            number: 500,
+            number: 3000,
             suffix: '+',
             label: 'Lives Transformed',
             description: 'Individuals empowered through coaching',
@@ -77,7 +77,7 @@ const StatsSection = () => {
             gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)'
         },
         {
-            number: 10,
+            number: 50,
             suffix: '+',
             label: 'Organizations Served',
             description: 'Companies transformed through our programs',

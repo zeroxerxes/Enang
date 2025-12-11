@@ -23,14 +23,14 @@ const About = () => {
         },
         {
             year: '2012 - Present',
-            title: 'BENK Assist & FIHOF',
-            description: 'Established BENK Assist for professional development ,empowering men and rebuild families.',
+            title: 'BENK Assist ',
+            description: 'Established BENK Assist for whole person empowerment. Building character, soft skills and self mastery.',
             icon: '🏆'
         },
         {
             year: 'Present',
             title: 'Expanding Horizons',
-            description: 'Continuing to transform lives through coaching, training, and community outreach.Fihof giving back and transforming lives',
+            description: 'Founded FIHOF to give back through male empowerment for family resilience. Transforming lives through coaching, training and community outreach ',
             icon: '🚀'
         }
     ];
@@ -57,8 +57,8 @@ const About = () => {
 
                         {/* Profile Image and Professional Profile - Centered */}
                         <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '4rem' }}>
-                            <div className="animate-scale-in delay-100" style={{ maxWidth: '350px', width: '100%' }}>
-                                <img src="/assets/profile-about.png" alt="Bernice Keshu" style={{ borderRadius: '20px', boxShadow: 'var(--shadow-lg)', width: '100%' }} />
+                            <div className="animate-scale-in delay-100" style={{ maxWidth: '450px', width: '100%' }}>
+                                <img src="/assets/logo.png" alt="Bernice Keshu" style={{ borderRadius: '20px', boxShadow: 'var(--shadow-lg)', width: '100%' }} />
                                 <div className="glass-card" style={{ marginTop: '1.5rem', padding: '1.5rem', textAlign: 'center' }}>
                                     <h3 style={{ fontSize: '1.2rem', marginBottom: '0.5rem', color: 'var(--color-primary)' }}>Professional Profile</h3>
                                     <p style={{ fontSize: '0.95rem', color: '#64748B', lineHeight: '1.6' }}>
@@ -75,7 +75,7 @@ const About = () => {
                                 From a place of deep curiosity about who I am, what makes me whole, and what breaks my wholeness, i embarked on a journey to find me
                                 ,through an inner battle with self-doubt and impostor syndrome.
                                 During that transition, I witnessed firsthand how unhealed experiences show up in how we speak, work, parent, and relate to others.
-                                I felt called to respond — to guide others through transformation, healing, and personal mastery.
+                                I felt called to respond — and two expression of me were born; (BENK Assist and FIHOF) to guide others through transitions, healing, and personal mastery.
                             </p>
                         </div>
 

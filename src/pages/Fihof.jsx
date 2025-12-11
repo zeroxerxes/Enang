@@ -23,7 +23,7 @@ const Fihof = () => {
         {
             icon: '🤝',
             title: 'Intergenerational Dialogue',
-            description: 'Bridging the gap between older men ang young boys through wisdom sharing and mentorship in father circles.',
+            description: 'Bridging the gap between older men and young boys through wisdom sharing and mentorship in father circles.',
             impact: '100+ Connections Made'
         }
     ];
@@ -275,7 +275,7 @@ const Fihof = () => {
                                     padding: '0.75rem 1.5rem',
                                     background: 'linear-gradient(135deg, rgba(230, 126, 34, 0.1) 0%, rgba(230, 126, 34, 0.05) 100%)',
                                     borderRadius: '25px',
-                                    color: '#E67E22',
+                                    color: 'rgb(129 82 47)',
                                     fontWeight: '600',
                                     fontSize: '0.9rem'
                                 }}>

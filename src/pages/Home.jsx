@@ -28,7 +28,7 @@ const Home = () => {
               <span className="text-gradient">Building Communities.</span>
             </h1>
             <p className="animate-slide-up delay-100" style={{ fontSize: '1.25rem', color: 'var(--color-text-muted)', marginBottom: '2.5rem', maxWidth: '550px' }}>
-              I am BENK. Award winning Human Development Expert, Professional Speaker,I help you find wholeness and Uniqueness.
+              I am BENK. Award winning Human Development Expert, Seasoned helping Professional & Speaker,I help you find wholeness and Uniqueness.
             </p>
             <div className="animate-slide-up delay-200" style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
               <Link to="/about" className="btn btn-primary">My Journey</Link>
@@ -44,7 +44,7 @@ const Home = () => {
               boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
               transform: 'rotate(2deg)',
               maxWidth: '450px',
-              border: '8px solid rgba(255, 255, 255, 0.8)'
+
             }}>
               <img src="/assets/profile-home.jpg" alt="Bernice Enang Nso Keshu" style={{ width: '100%', height: 'auto', display: 'block' }} />
               <div style={{

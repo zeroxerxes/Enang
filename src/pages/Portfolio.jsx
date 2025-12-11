@@ -17,7 +17,7 @@ const Portfolio = () => {
             title: 'Leadership Development Workshop',
             category: 'workshops',
             description: 'Empowering future leaders through comprehensive soft skills training and identity development.',
-            image: 'photo-1531482615713-2afd69097998?w=800&q=80',
+            image: '/assets/portfolio/leadership_corporate.jpg',
             tags: ['Leadership', 'Training', 'Growth']
         },
         {
@@ -25,7 +25,7 @@ const Portfolio = () => {
             title: 'Family Healing Initiative',
             category: 'community',
             description: 'Supporting families through counseling and community-based healing programs.',
-            image: 'photo-1609220136736-443140cffec6?w=800&q=80',
+            image: 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=800&q=80',
             tags: ['Family', 'Healing', 'Community']
         },
         {
@@ -33,7 +33,7 @@ const Portfolio = () => {
             title: 'Executive Coaching Program',
             category: 'coaching',
             description: 'One-on-one coaching sessions for professionals seeking personal and career growth.',
-            image: 'photo-1573496359142-b8d87734a5a2?w=800&q=80',
+            image: '/assets/portfolio/executive_coaching.jpg',
             tags: ['Executive', 'Coaching', 'Professional']
         },
         {
@@ -41,7 +41,7 @@ const Portfolio = () => {
             title: 'Youth Empowerment Series',
             category: 'workshops',
             description: 'Engaging young minds through interactive workshops on identity and self-discovery.',
-            image: 'photo-1588196749597-9ff075ee6b5b?w=800&q=80',
+            image: '/assets/portfolio/youth_empowerment.jpg',
             tags: ['Youth', 'Empowerment', 'Identity']
         },
         {
@@ -49,7 +49,7 @@ const Portfolio = () => {
             title: 'Corporate Training Sessions',
             category: 'workshops',
             description: 'Customized training programs for organizations focused on team building and communication.',
-            image: 'photo-1600880292203-757bb62b4baf?w=800&q=80',
+            image: 'https://images.unsplash.com/photo-1573167101669-476636b96cea?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
             tags: ['Corporate', 'Team Building', 'Communication']
         },
         {
@@ -57,7 +57,7 @@ const Portfolio = () => {
             title: 'Community Outreach Program',
             category: 'community',
             description: 'Grassroots initiatives bringing healing and support to underserved communities.',
-            image: 'photo-1559027615-cd4628902d4a?w=800&q=80',
+            image: '/assets/portfolio/community_family.jpg',
             tags: ['Outreach', 'Support', 'Impact']
         }
     ];
@@ -86,7 +86,7 @@ const Portfolio = () => {
                         fontFamily: 'var(--font-heading)'
                     }}>
                         My <span style={{
-                            background: 'rgb(255 34 53)',
+                            background: 'white',
                             WebkitBackgroundClip: 'text',
                             WebkitTextFillColor: 'transparent',
                             backgroundClip: 'text'
@@ -371,25 +371,26 @@ const Portfolio = () => {
                                     color: '#C68E76',
                                     marginBottom: '0.5rem'
                                 }}>
-                                    Master's in Counselling Psychology
+                                    Master's in Counselling
                                 </h4>
                                 <p style={{ color: '#64748B', fontSize: '0.95rem' }}>
-                                    University of Buea
+                                    University of Yaounde
                                 </p>
                             </div>
-                            <div>
+                            <div style={{ marginBottom: '1.5rem' }}>
                                 <h4 style={{
                                     fontSize: '1.1rem',
                                     fontWeight: '600',
                                     color: '#C68E76',
                                     marginBottom: '0.5rem'
                                 }}>
-                                    Bachelor's Degree in Psychology
+                                    Post Graduate in Counselling
                                 </h4>
                                 <p style={{ color: '#64748B', fontSize: '0.95rem' }}>
-                                    Specialized in Human Development
+                                    University of Yaounde
                                 </p>
                             </div>
+
                         </div>
 
                         {/* Certifications */}
@@ -426,8 +427,7 @@ const Portfolio = () => {
                                 {[
                                     'Certified Life Coach (ICF Accredited)',
                                     'Emotional Intelligence Practitioner',
-                                    'Family Systems Therapist',
-                                    'Trauma-Informed Counselor',
+                                    'Family Systems Counselor',
                                     'Leadership Development Specialist'
                                 ].map((cert, i) => (
                                     <li key={i} style={{
