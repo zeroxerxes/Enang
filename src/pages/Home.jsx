@@ -118,7 +118,7 @@ const Home = () => {
             {/* Card 3 */}
             <div className="glass-card animate-slide-up delay-300">
               <div style={{ height: '220px', overflow: 'hidden', borderRadius: '16px', marginBottom: '1.5rem' }}>
-                <img src="/assets/photo-1.jpg" alt="Speaking" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                <img src="/assets\FI\IMG-20251024-WA0006.jpg" alt="Speaking" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
               </div>
               <h3 style={{ marginBottom: '1rem', fontSize: '1.5rem' }}>Speaking & Training</h3>
               <p style={{ color: 'var(--color-text-muted)', marginBottom: '1.5rem' }}>
