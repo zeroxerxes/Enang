@@ -371,10 +371,10 @@ const Portfolio = () => {
                                     color: '#C68E76',
                                     marginBottom: '0.5rem'
                                 }}>
-                                    Master's in Counselling
+                                    MASTERS in Counselling
                                 </h4>
                                 <p style={{ color: '#64748B', fontSize: '0.95rem' }}>
-                                    University of Yaounde
+                                    University of Dschang
                                 </p>
                             </div>
                             <div style={{ marginBottom: '1.5rem' }}>
@@ -387,7 +387,7 @@ const Portfolio = () => {
                                     Post Graduate in Counselling
                                 </h4>
                                 <p style={{ color: '#64748B', fontSize: '0.95rem' }}>
-                                    University of Yaounde
+                                    University of Dschang
                                 </p>
                             </div>
 
