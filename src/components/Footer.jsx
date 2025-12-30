@@ -58,7 +58,7 @@ const Footer = () => {
                             Bernice Enang
                         </h3>
                         <p style={{ color: 'rgba(255, 255, 255, 0.8)', lineHeight: '1.6' }}>
-                            Identity Development Counsellor, Soft Skills Trainer, and Life Coach dedicated to dedicated to whole person empowerment and building resilient communities.
+                            Identity Development Counsellor, Soft Skills Trainer, and Life Coach dedicated to whole person empowerment and building resilient communities.
                         </p>
                     </div>
 
